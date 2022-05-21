@@ -9,7 +9,7 @@ let app = express();
 
 app.use("/public",addStyle);
 app.get("/public",(req,res)=>{
-    let absolutePath = __dirname + "/views/index.html";
+    let absolutePath = __dirname + "/public/style.css";
     res.sendFile(absolutePath);
 });
 
