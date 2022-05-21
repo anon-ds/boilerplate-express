@@ -1,6 +1,6 @@
 let express = require('express');
 
-let stylesPath = __dirname + "public/style.css";
+let stylesPath = __dirname + "/public/style.css";
 const addStyle = express.static(stylesPath);
 
 
