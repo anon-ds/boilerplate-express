@@ -7,8 +7,8 @@ const addStyle = express.static(stylesPath);
 console.log("Hello World");
 let app = express();
 
-app.use(addStyle);
-app.get("/",(req,res)=>{
+app.use("/public",addStyle);
+app.get("/public",(req,res)=>{
     let absolutePath = __dirname + "/views/index.html";
     res.sendFile(absolutePath);
 });
