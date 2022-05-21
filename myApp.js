@@ -8,7 +8,7 @@ console.log("Hello World");
 let app = express();
 
 app.use(addStyle);
-app.get("/public",(req,res)=>{
+app.get("/",(req,res)=>{
     let absolutePath = __dirname + "/views/index.html";
     res.sendFile(absolutePath);
 });
