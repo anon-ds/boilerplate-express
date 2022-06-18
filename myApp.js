@@ -18,8 +18,7 @@ app.get("/json",(req,res)=>{
     else
     {
         res.json({"message":response});
-    }
-});
+    }});
 
 
 
